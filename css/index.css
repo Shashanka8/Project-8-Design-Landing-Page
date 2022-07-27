@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #251b92;
+  background: url("../images/backcover.svg");
+  background-position: right;
+  background-size: 890px;
+  background-repeat: no-repeat;
+}
+
+.main-div {
+  padding: 3% 15%;
+}
+
+/* ----------- Navbar start ----------- */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-item {
+  padding: 0 30px;
+}
+
+.signin-btn {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  background: linear-gradient(to right, #aa46fc, #ff70a7);
+  border: none;
+  padding: 5px 15px;
+  border-radius: 30px;
+}
+
+/* ----------- Navbar end ----------- */
+
+/* ----------- Intro section start ----------- */
+
+.intro-section {
+  padding-top: 150px;
+}
+
+.left-section {
+  float: left;
+  width: 50%;
+}
+
+.left-section h1 {
+  font-size: 60px;
+}
+
+.left-section h4 {
+  font-size: 14px;
+  font-weight: normal;
+  padding: 30px 0;
+  width: 60%;
+  line-height: 1.6;
+}
+
+.learn-more-btn {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  background: linear-gradient(to right, #aa46fc, #ff70a7);
+  border: none;
+  font-size: 26px;
+  padding: 10px 25px;
+  border-radius: 30px;
+}
+
+.imgs-div img[alt="intro-img"] {
+  position: fixed;
+  top: 15%;
+  right: 5%;
+  height: 80vh;
+  width: 55vw;
+}
+
+.vector-img {
+  position: fixed;
+  top: 65%;
+  left: 45%;
+}
+
+.vector-dot {
+  position: fixed;
+  top: 65%;
+  left: 48.5%;
+}
+
+/* ----------- Intro section end ----------- */
