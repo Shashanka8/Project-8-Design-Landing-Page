@@ -17,6 +17,10 @@ body {
   padding: 3% 15%;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* ----------- Navbar start ----------- */
 
 nav {
@@ -33,7 +37,8 @@ nav {
 }
 
 .nav-item {
-  padding: 0 30px;
+  margin: 0 30px;
+  cursor: pointer;
 }
 
 .signin-btn {
@@ -43,6 +48,12 @@ nav {
   border: none;
   padding: 5px 15px;
   border-radius: 30px;
+}
+
+.menu-icon {
+  display: none;
+  height: 32px;
+  cursor: pointer;
 }
 
 /* ----------- Navbar end ----------- */
@@ -101,3 +112,110 @@ nav {
 }
 
 /* ----------- Intro section end ----------- */
+
+@media screen and (max-width: 1199px) {
+  body {
+    background-size: 640px;
+  }
+  .main-div {
+    padding: 3% 10%;
+  }
+  img[alt="logo"] {
+    height: 40px;
+  }
+  .imgs-div img[alt="intro-img"] {
+    height: 70vh;
+    width: 50vw;
+  }
+  .vector-dot {
+    left: 49.5%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  body {
+    background-size: 550px;
+    background-position: top right;
+  }
+  .nav-item {
+    margin: 0 20px;
+    cursor: pointer;
+  }
+  .learn-more-btn {
+    font-size: 22px;
+    padding: 10px 20px;
+  }
+  .vector-img {
+    left: 40%;
+    height: 80px;
+  }
+  .vector-dot {
+    left: 44.5%;
+    height: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-size: 500px;
+  }
+  .main-div {
+    padding: 2% 5%;
+  }
+  .nav-items,
+  .signin-btn {
+    display: none;
+  }
+  .menu-icon {
+    display: inline-block;
+  }
+  .imgs-div img[alt="intro-img"] {
+    height: 65vh;
+    width: 50vw;
+  }
+  .intro-section {
+    padding-top: 120px;
+  }
+  .left-section h1 {
+    font-size: 48px;
+  }
+  .vector-dot,
+  .vector-img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background: none;
+  }
+  .intro-section {
+    padding-top: 80px;
+  }
+  .left-section {
+    width: 100%;
+  }
+  .imgs-div img[alt="intro-img"] {
+    top: 45%;
+    width: 75vw;
+  }
+  .left-section h4 {
+    padding: 30px 0;
+    width: 70%;
+  }
+  .learn-more-btn {
+    font-size: 20px;
+  }
+  .vector-img {
+    display: inline-block;
+    top: 85%;
+    left: 20%;
+    height: 60px;
+  }
+  .vector-dot {
+    display: inline-block;
+    top: 85%;
+    left: 26.5%;
+    height: 18px;
+  }
+}
